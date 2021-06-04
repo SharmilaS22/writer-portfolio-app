@@ -1,0 +1,72 @@
+* {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  --primary: #d35656;
+  --secondary: #f66767;
+  --light: #f9d5bb;
+  --dark: #3c3d47;
+}
+/* font-family: 'Raleway', sans-serif;
+font-family: 'Abril Fatface', cursive; */
+body {
+  margin: 0;  padding: 0;
+  font-family: "Raleway", sans-serif;
+}
+.line-15 { line-height: 1.5; }
+/* .nav-item{background-color:#ebebeb;} */
+#home {
+  color: #fff;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)),
+    url(assets/annie-spratt-LtxbHVUhp90-unsplash.jpg) center no-repeat;
+  background-size: cover;
+}
+#name { font-family: "Abril Fatface", cursive; }
+.underline {
+  background-color: black;
+  width: 15%;
+  height: 5px;
+  border-radius: 4px;
+}
+#contact {
+  color: #fff;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)),
+    url(assets/matthew-moisant-sIPRbIj9Oo8-unsplash.jpg) center no-repeat;
+  background-size: cover;
+}
+/* theme */
+.bg-light-theme {background-color: var(--light);}
+.bg-dark-theme {background-color: var(--dark);}
+.text-primary-theme {color: var(--primary);}
+.text-secondary-theme {color: var(--secondary);}
+.text-light-theme {color: var(--light);}
+.text-dark-theme {color: var(--dark);}
+.btn-outline-primary {  color: var(--primary);  border-color: var(--primary);  background-color: transparent; }
+.btn-outline-primary:hover {  color: var(--light);  border-color: transparent;  background-color: var(--primary); }
+.btn-sec {  color: white;  border-color: transparent;  background-color: var(--secondary);  transition: 0.3s;}
+.btn-sec:hover {  color: white;  border-color: transparent;  background-color: var(--secondary);  filter: opacity(0.9);}
+.btn-primary {  color: white;  border-color: transparent;  background-color: var(--primary);  transition: 0.3s;}
+.btn-primary:hover {  color: white;  border-color: transparent;  background-color: var(--primary);  filter: opacity(0.9);}
+/* padding  */
+.padding-10-15 {  padding: 10% 15%;}
+.padding-10-5  {  padding: 10%  5%;}
+.padding-10-15-0-15 {  padding: 10% 15% 0 15%;}
+.padding-3-5 {  padding: 3rem 5rem;}
+/*  Book display  */
+#wattpad-embed {  visibility: visible;}
+#book-image {  visibility: hidden;  height:0;  width:0;}
+/* small screen adjustments */
+@media only screen and (max-width: 425px) {
+  .padding-3-5 {  padding: 1.5rem 2.5rem;  }
+  .padding-10-15 {  padding: 15% 7.5%;  }
+}
+@media only screen and (max-width: 690px) {
+  #wattpad-embed {  visibility: hidden;  height: 0;  width: 0; }
+  #book-image {  visibility: visible;  height:100%;  width: auto; }
+}
+#work-card {
+  width: 20rem;
+}
+#site-credit:hover {
+  color: var(--light);
+  filter: opacity(0.8);
+}
