@@ -6,6 +6,7 @@ const mongoose = require("mongoose");
 const app = express();
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
+
 // mongodb atlas connect
 const MONGO_URL = process.env.MONGO_URL
 mongoose
